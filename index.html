@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
+    
+    <style>
+      h2 {
+        text-align: center;
+        font-family: Arial;
+      }
+       h4 {
+        text-align: center;
+        font-family: Arial;
+      }
+    </style> 
+    
+    <script type="text/javascript">
+      function draw(data) {
+      
+      /*
+        D3.js setup code
+      */
+
+          "use strict";
+          var margin = 75,
+              width = 1400 - margin,
+              height = 600 - margin;
+          
+          d3.select("body").append('h2')
+            .text('How India Eats');  
+          d3.select("body").append('h4')
+            .text('Vegetarians versus Non-Vegetarians per State. Indian states ordered West(left) to East(right)');  
+          
+          var svg = d3.select("body")
+            .append("svg")
+              .attr("width", width + margin)
+              .attr("height", height + margin)
+            .append('g')
+              .attr('class','chart');
+
+      /*
+        Dimple.js Chart construction code
+      */
+
+          var myChart = new dimple.chart(svg, data);
+<!--           myChart.addCategoryAxis("x", "Code") -->
+<!--           .addOrderRule(["GJ","RJ","MH","KA","KL","PB","HR","JK","DL","AP","MP", -->
+<!--                          "TN","TS","UK","CG","UP","JH","OD","BR","WB","AS"]); -->
+          myChart.addCategoryAxis("x", "State")
+            .addOrderRule(["Gujarat","Rajasthan","Maharashtra","Karnataka","Kerala","Punjab",
+                           "Haryana","Jammu and Kashmir","Delhi","Andhra Pradesh",
+                           "Madhya Pradesh","Telangana","Telangana","Uttarakhand",
+                           "Chhattisgarh","Uttar Pradesh","Jharkhand","Odisha",
+                           "Bihar","West Bengal","Assam"]);
+          myChart.addMeasureAxis("y", "Value");
+          myChart.addSeries("Type", dimple.plot.bar)
+          myChart.addLegend(65, 10, 650, 20, "left");
+          myChart.draw();
+        };
+    </script>
+</head>
+  
+<body>
+  <script type="text/javascript">
+  /*
+    Use D3 (not dimple.js) to load the CSV file
+    and pass the contents of it to the draw function
+    */
+  d3.csv("HowIndiaEats.csv", draw);
+  </script>
+</body>
+</html>
