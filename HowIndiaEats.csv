@@ -1,0 +1,43 @@
+Code,State,Type,Value
+JK,Jammu and Kashmir,Vegetarians,31.45
+JK,Jammu and Kashmir,NonVegetarians,68.55
+PB,Punjab,Vegetarians,66.75
+PB,Punjab,NonVegetarians,33.25
+UK,Uttarakhand,Vegetarians,27.35
+UK,Uttarakhand,NonVegetarians,72.65
+HR,Haryana,Vegetarians,69.25
+HR,Haryana,NonVegetarians,30.75
+DL,Delhi,Vegetarians,39.5
+DL,Delhi,NonVegetarians,60.5
+RJ,Rajasthan,Vegetarians,74.9
+RJ,Rajasthan,NonVegetarians,25.1
+UP,Uttar Pradesh,Vegetarians,47.1
+UP,Uttar Pradesh,NonVegetarians,52.9
+GJ,Gujarat,Vegetarians,60.95
+GJ,Gujarat,NonVegetarians,39.05
+MP,Madhya Pradesh,Vegetarians,50.6
+MP,Madhya Pradesh,NonVegetarians,49.4
+BR,Bihar,Vegetarians,7.55
+BR,Bihar,NonVegetarians,92.45
+AS,Assam,Vegetarians,20.60
+AS,Assam,NonVegetarians,79.4
+JH,Jharkhand,Vegetarians,3.25
+JH,Jharkhand,NonVegetarians,96.75
+WB,West Bengal,Vegetarians,1.4
+WB,West Bengal,NonVegetarians,98.6
+MH,Maharashtra,Vegetarians,40.2
+MH,Maharashtra,NonVegetarians,59.8
+CG,Chhattisgarh,Vegetarians,17.95
+CG,Chhattisgarh,NonVegetarians,82.05
+OD,Odisha,Vegetarians,2.65
+OD,Odisha,NonVegetarians,97.35
+TS,Telangana,Vegetarians,1.3
+TS,Telangana,NonVegetarians,98.7
+KA,Karnataka,Vegetarians,21.1
+KA,Karnataka,NonVegetarians,78.9
+AP,Andhra Pradesh,Vegetarians,1.75
+AP,Andhra Pradesh,NonVegetarians,98.25
+KL,Kerala,Vegetarians,3.
+KL,Kerala,NonVegetarians,97.
+TN,Tamil Nadu,Vegetarians,2.35
+TN,Tamil Nadu,NonVegetarians,97.65
